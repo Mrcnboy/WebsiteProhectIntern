@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+/*-- HEADER --*/
+
+header {
+  height: 120px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 900;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+
+header .container {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 900;
+  position: relative;
+}
+
+header .container ul {
+  display: flex;
+  z-index: 900;
+}
+
+header .container ul .hh1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 30px;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: #000000;
+  z-index: 0;
+}
+header .container ul .hh2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 30px;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: #000000;
+  z-index: 0;
+}
+header .container ul .hh3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 30px;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: #0f238e;
+  z-index: 0;
+}
+
+header .container ul .hh4 {
+  margin-right: 90px;
+  color: #000000;
+}
+header .container ul .logo4 {
+   margin-left: -50px;
+}
+
+
+header .navbar .menu-hamburger {
+  display: none;
+  position: absolute;
+  width: 35px;
+  top: 22px;
+  right: 45px;
+  z-index: 20;
+}
+
+@media(max-width :1500px) {
+  .logo4 img {
+      width: 80%;
+      margin-left: 20px;
+  }
+  header {
+      background-color: #ffffff;
+      position: relative;
+  }
+  header .container {
+      display: flex;
+      width: 100%;
+  }
+  header .container nav a {
+      color: rgb(0, 0, 0);
+  }
+ 
+  .sec1 .container button {
+      position: relative;
+      height: 70px;
+      width: 250px;
+      border-radius: 50px;
+      background-color: white;
+      border: 3px solid #01142c;
+      font-size: 1.5em;
+      color: #01142c;
+      z-index: 2;
+      transition: 0.3s;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  header .container ul .logo4 {
+      margin-left: -50px;
+  }
+}
+@media(max-width :1112px) {
+  .logo4 {
+      display: none;
+  }
+ 
+  header .container .logo4 {
+      display: none;
+  }
+  }
+
+@media screen and (max-width: 1005px) {
+  header {
+      background-color: #ffffff;
+      width: 100vw;
+      height: 12vh;
+      background-size: cover;
+  }
+  .logo4 {
+      display: none;
+  }
+ 
+  header .container .logo4 {
+      display: none;
+  }
+  header .container {
+      display: block;
+      width: 100%;
+  }
+  header .container ul a {
+      margin: 0 0 0 0px;
+      color: #01142c;
+  }
+  header .container ul .hh4 {
+      margin-right: 20px;
+   }
+  header .container img {
+      z-index: 8;
+  }
+  header .container ul img {
+      display: none;
+  }
+  .navbar {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      margin-top: 0;
+  }
+  .nav-links {
+      top: -40px;
+      left: 0;
+      position: absolute;
+      background-color: rgba(199, 199, 199, 0.37);
+      backdrop-filter: blur(8px);
+      width: 100%;
+      height: 120vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 7;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+  }
+  .nav-links.mobile-menu {
+      margin-left: 0;
+  }
+  .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  header .navbar .menu-hamburger {
+      display: block;
+  }
+  .nav-links ul li {
+      margin: 25px 0;
+      font-size: 1.2em;
+  }
+}
+
+.services {
+  min-height: 90vh;
+  padding: 3rem 5rem 0 3rem;
+  position: relative;
+}
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 38vw;
+  background-image: linear-gradient(to bottom, #01142c, #0f238e);
+}
+.container1 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.section-title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: linear-gradient(#01142c, #0f238e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+
+.list-services {
+  margin-top: 5rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-services .service-box {
+  background-color: #ffffff;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  max-width: 350px;
+  border-radius: 20px;
+  position: relative;
+  transition: box-shadow .2s linear;
+  box-shadow: 10px 10px 10px rgba(29, 29, 29, 0.3);
+  border-top: 1px solid rgba(145, 145, 145, 0.5);
+  border-left: 1px solid rgba(170, 170, 170, 0.5);
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+}
+.list-services .service-box:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.list-services .service-box:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+.list-services .service-box .icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: #000;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 80px;
+  color: #FFF;
+  top: -40px;
+  right: -40px;
+}
+.list-services .service-box .text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+
+}
+.list-services .service-box .title {
+  background: linear-gradient(15deg, #01142c, #0f238e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+
+  font-weight: 900;
+  transform: scaleY(1.05);
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+@media screen and (min-width: 910px) {
+  .list-services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  .list-services .service-box {
+    max-width: 310px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .list-services {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+  }
+  .list-services .service-box {
+    width: 29%;
+    margin: 0 !important;
+  }
+}
+
